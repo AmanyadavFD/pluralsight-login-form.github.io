@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+	text-transform: capitalize;
+}
+.col-40{
+	float: left;
+	width: 40%;
+}
+.col-60{
+	float: left;
+	width: 60%;
+}
+.row::after{
+	content: " ";
+	display: table;
+	clear: both;
+}
+.login_bg_color{
+	background-color:#191515;
+	height: 100vh;
+	position: relative;
+}
+.form_section{
+	min-width: 350px;
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.form-col{
+	margin: 30px 0;
+}
+
+label{
+	display: block;
+	color: #afabab;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+input[type=text],input[type=password]{
+	width: 100%;
+	padding: 12px 18px;
+	outline: none;
+	background-color: #191515;
+	border: 1px solid #afabab;
+	border-radius: 3px;
+	color: #afabab;
+}
+input[type=submit]{
+	width: 100%;
+	padding: 12px 18px;
+	outline: none;
+	background-color: #f96816;
+	color: #fff;
+	border: none;
+	font-size: 17px;
+}
+.login_content{
+	text-align: center;
+}
+.links{
+	margin: 15px 0;
+}
+.links a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+span{
+	color: #fff;
+}
+.btn a{
+	width: 100%;
+	display: block;
+	border: 1px solid #f96816;
+	padding: 12px 0;
+	border-radius: 2px;
+	color: #f96816;
+}
+.imageSection{
+	position: relative;
+	width: 100%;
+}
+.imageSection_inner{
+	background-image: url("../images/role-IQ-login.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+}
+@media only screen and (max-width: 930px){
+	.col-40{
+		width: 100%;
+		float: none;
+	}
+	.form_section{
+		width: 100%;
+		padding: 0 50px;
+	}
+	.col-60{
+		display: none;
+		float: none;
+	}
+}
